@@ -11,6 +11,8 @@ COPY . /app
 
 # Cloning zotero translators repository
 RUN git clone --depth=1 https://github.com/zotero/translators.git /app/modules/translators/
+
+COPY ./.git ./.gitmodules
 RUN git submodule update --init --recursive
 # run the application
 EXPOSE 1969
