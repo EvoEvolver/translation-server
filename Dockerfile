@@ -11,6 +11,7 @@ COPY . /app
 
 # Cloning zotero translators repository
 RUN git clone https://github.com/zotero/translators.git /app/modules/translators/
+RUN git clone https://github.com/zotero/translate.git /app/modules/translate/
 # run the application
 EXPOSE 1969
 ENTRYPOINT [ "./docker-entrypoint.sh" ]
