@@ -13,7 +13,7 @@ COPY . /app
 RUN git clone https://github.com/zotero/translators.git /app/modules/translators/
 RUN git clone https://github.com/zotero/translate.git /app/modules/translate/
 RUN git clone https://github.com/zotero/utilities.git /app/modules/utilities/
-
+RUN git clone https://github.com/zotero/zotero-schema.git /app/modules/zotero-schema/
 # run the application
 EXPOSE 1969
 ENTRYPOINT [ "./docker-entrypoint.sh" ]
